@@ -5,12 +5,12 @@
 
 MKDOCS_DIR="docs/_mkdocstest/"
 WORK_DIR="work/"
-TRANS_DIR="${WORK_DIR}Mkdocs_transform/"
+TRANS_DIR="${WORK_DIR}auto_deploy/"
 TRANS_FILE="${TRANS_DIR}active_translations"
 MKDOCS_MAIN="${MKDOCS_DIR}mkdocs-main.yml"
 
 # Fetch translations
-git clone --depth 1 https://github.com/z1996xm/Mkdocs_transform ${TRANS_DIR}
+git clone --depth 1 https://github.com/z1996xm/auto_deploy ${TRANS_DIR}
 
 # Create new mkdocs-main.yml with language links
 cp ${MKDOCS_DIR}mkdocs.yml ${MKDOCS_MAIN}
