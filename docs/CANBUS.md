@@ -128,5 +128,4 @@ iface can0 can static
     bitrate 500000
     up ifconfig $IFACE txqueuelen 128
 ```
-1111
-2222
+123888888888
