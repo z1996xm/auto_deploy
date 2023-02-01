@@ -44,7 +44,7 @@ while IFS="," read dirname langsite langdesc langsearch; do
   echo "copy resources"
   cp -r docs/img "${new_docs_dir}"
   cp -r docs/prints "${new_docs_dir}"
-  cp -r docs/_klipper3d "${new_docs_dir}"
+  cp -r docs/_mkdocstest "${new_docs_dir}"
 
   # manually replace index.md if a manual-index.md exist
   manual_index="${new_docs_dir}manual-index.md"
@@ -57,7 +57,7 @@ while IFS="," read dirname langsite langdesc langsearch; do
 
   # Create language specific mkdocs-lang-xxx.yml file
   echo "create language specific mkdocs configurations for ${langsite}"
-  new_mkdocs_file="${new_docs_dir}_klipper3d/mkdocs-lang-${langsite}.yml"
+  new_mkdocs_file="${new_docs_dir}_mkdocstest/mkdocs-lang-${langsite}.yml"
   cp "${MKDOCS_MAIN}" "${new_mkdocs_file}"
 
   echo "replace search language"
