@@ -129,3 +129,4 @@ iface can0 can static
     up ifconfig $IFACE txqueuelen 128
 ```
 1111
+2222
