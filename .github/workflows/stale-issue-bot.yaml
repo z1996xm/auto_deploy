@@ -6,7 +6,7 @@ on:
 jobs:
   # Check for stale issues (no updates in 5 weeks)
   stale:
-    if: github.repository == 'Klipper3d/klipper'
+    if: github.repository == 'z1996xm/auto_mkdocs'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/stale@v3
@@ -33,7 +33,7 @@ jobs:
         days-before-close: 7
   # Close tickets marked with "not on github" label
   close_not_on_github:
-    if: github.repository == 'Klipper3d/klipper'
+    if: github.repository == 'z1996xm/auto_mkdocs'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v6
@@ -62,7 +62,7 @@ jobs:
             }
   # Close tickets marked with "reviewer needed" label for 2+ weeks
   close_reviewer_needed:
-    if: github.repository == 'Klipper3d/klipper'
+    if: github.repository == 'z1996xm/auto_mkdocs'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v6
@@ -110,7 +110,7 @@ jobs:
             }
   # Mark unassigned PRs that are idle for 2 weeks
   mark_reviewer_needed:
-    if: github.repository == 'Klipper3d/klipper'
+    if: github.repository == 'z1996xm/auto_mkdocs'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v6
@@ -194,7 +194,7 @@ jobs:
             }
   # Close tickets marked with "resolved" label
   close_resolved:
-    if: github.repository == 'Klipper3d/klipper'
+    if: github.repository == 'z1996xm/auto_mkdocs'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v6
@@ -236,7 +236,7 @@ jobs:
             }
   # Close PRs marked with "not mainline" label
   close_not_mainline:
-    if: github.repository == 'Klipper3d/klipper'
+    if: github.repository == 'z1996xm/auto_mkdocs'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v6
@@ -279,7 +279,7 @@ jobs:
             }
   # Mark (and close) PRs with "pending feedback" for 3+ weeks
   mark_inactive:
-    if: github.repository == 'Klipper3d/klipper'
+    if: github.repository == 'z1996xm/auto_mkdocs'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v6
@@ -329,7 +329,7 @@ jobs:
   # Lock closed issues after 6 months of inactivity and PRs after 1 year.
   lock:
     name: Lock Closed Issues
-    if: github.repository == 'Klipper3d/klipper'
+    if: github.repository == 'z1996xm/auto_mkdocs'
     runs-on: ubuntu-latest
     steps:
     - uses: dessant/lock-threads@v3
